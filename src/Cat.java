@@ -10,6 +10,25 @@ public class Cat
         this.furColor = furColor;
         this.age = age;
     }
+   
+    public void tellYourAtrributes(String chechStr) {
+        switch (chechStr) {
+            case "name":
+                System.out.println(this.name);
+                break;
+                case "furColor":
+                System.out.println(this.furColor);
+                break;
+            case "age":
+                System.out.println(this.age);
+                break;
+            default:
+                System.out.println("error!");
+                break;
+        }
+    }
+}  
+/*
     public void tellYourName() {
         System.out.println(this.name);
     } 
@@ -20,4 +39,4 @@ public class Cat
         System.out.println(this.age);
     }
 }
- 
+*/ 
