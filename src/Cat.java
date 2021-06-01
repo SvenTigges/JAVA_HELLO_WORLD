@@ -11,21 +11,18 @@ public class Cat
         this.age = age;
     }
    
-    public void tellYourAtrributes(String chechStr) {
+    public String tellYourAtrributes(String chechStr) {
         switch (chechStr) {
             case "name":
-                System.out.println(this.name);
-                break;
-                case "furColor":
-                System.out.println(this.furColor);
-                break;
+                return this.name;   
+            case "furColor":
+                return this.furColor;  
             case "age":
-                System.out.println(this.age);
-                break;
+                return String.valueOf(this.age);
             default:
-                System.out.println("error!");
-                break;
+                return "error";
         }
+        
     }
 }  
 /*
