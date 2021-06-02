@@ -6,14 +6,12 @@ public class Cat
     public int age; 
     public boolean isFemale; 
 
-
     public Cat(String name, String furColor, int age, boolean isFemale) {
         this.name = name;
         this.furColor = furColor;
         this.age = age;
         this.isFemale = isFemale;
     }
-
 
     public String tellYourAtrributes(String chechStr) {
         switch (chechStr) {
@@ -23,21 +21,44 @@ public class Cat
                 return this.furColor;  
             case "age":
                 return this.checkCompliance(); 
-                //return Integer.toString(this.age);
-                //return String.valueOf(this.age);
             default:
                 return "error";
         }
         
     }
+
     public String checkCompliance() {
         if (isFemale) 
         {
-            return "This is an inappropriate qestion!";
+            return this.checkEscalationLevel(); 
         } 
         else 
         {
             return Integer.toString(this.age);  
+        }
+    }
+
+    public String checkEscalationLevel() 
+    {
+        // 1. --> "This is an inappropriate question!"
+
+        // 2. --> "I've told you once!"
+
+        // 3. --> "Talk to the hand!"
+
+        // 4. --> "something else ..."
+
+        int counter = 4;
+
+        switch (counter) {
+            case 1:
+                return "this is an inappropriated question!";
+            case 2:
+                return  "I've told you once!";
+            case 3:
+                return "Talk to the hand!";   
+            default:
+                return "Fuck off!";
         }
     }
 }  
@@ -58,15 +79,3 @@ public class Cat
 
 
 
-/*  Erste überlegung 
-    public void tellYourName() {
-        System.out.println(this.name);
-    } 
-    public void tellYourFurColor() {
-        System.out.println(this.furColor);
-    }
-    public void tellYourAge() {
-        System.out.println(this.age);
-    }
-}
-*/ 

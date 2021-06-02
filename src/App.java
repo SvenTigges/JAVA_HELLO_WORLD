@@ -8,6 +8,8 @@ public class App
         ausgabe(cat1.tellYourAtrributes("name"));
         ausgabe(cat1.tellYourAtrributes("furColor"));
         ausgabe(cat1.tellYourAtrributes("age"));
+        ausgabe(cat1.tellYourAtrributes("age"));
+        ausgabe(cat1.tellYourAtrributes("age"));
         
 
         System.out.println("---------------------------");
