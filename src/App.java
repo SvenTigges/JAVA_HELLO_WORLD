@@ -10,6 +10,7 @@ public class App
         ausgabe(cat1.tellYourAtrributes("age"));
         ausgabe(cat1.tellYourAtrributes("age"));
         ausgabe(cat1.tellYourAtrributes("age"));
+        ausgabe(cat1.tellYourAtrributes("age"));
         
 
         System.out.println("---------------------------");

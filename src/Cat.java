@@ -5,6 +5,7 @@ public class Cat
     public String furColor;
     public int age; 
     public boolean isFemale; 
+    public int level;   // intern verwendet 
 
     public Cat(String name, String furColor, int age, boolean isFemale) {
         this.name = name;
@@ -48,9 +49,9 @@ public class Cat
 
         // 4. --> "something else ..."
 
-        int counter = 4;
+        this.level++; 
 
-        switch (counter) {
+        switch (level) {
             case 1:
                 return "this is an inappropriated question!";
             case 2:
